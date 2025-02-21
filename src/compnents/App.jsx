@@ -1,9 +1,9 @@
 import userData from "../UserData.json";
 import UserProfile from "./UserCard/UserProfile";
 import transactionsList from "../Transactions.json";
-import Transactions from "./Transactions/Transactions";
+import Transaction from "./Transactions/Transactions";
 import FriendListItem from "./FriendListItem/FriendListItem";
-import FriendsList from "../FriendList.json";
+import friendsList from "../FriendList.json";
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
       ></UserProfile>
 
       <ul>
-        {FriendsList.map((friend) => {
+        {friendsList.map((friend) => {
           return (
             <li key={friend.id}>
               {<FriendListItem friend={friend}></FriendListItem>}
@@ -36,10 +36,10 @@ export default function App() {
         </thead>
 
         <tbody>
-          {transactionsList.map((items) => {
+          {transactionsList.map((item) => {
             return (
-              <tr key={items.id}>
-                <Transactions items={items}></Transactions>
+              <tr key={item.id}>
+                <Transaction items={item}></Transaction>
               </tr>
             );
           })}
