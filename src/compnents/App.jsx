@@ -1,20 +1,20 @@
-// import userData from "../UserData.json";
-// import UserProfile from "./UserCard/UserProfile";
-// import transactionsList from "../Transactions.json";
-// import Transactions from "./Transactions/Transactions";
+import userData from "../UserData.json";
+import UserProfile from "./UserCard/UserProfile";
+import transactionsList from "../Transactions.json";
+import Transactions from "./Transactions/Transactions";
 import FriendListItem from "./FriendListItem/FriendListItem";
 import FriendsList from "../FriendList.json";
 
 export default function App() {
   return (
     <>
-      {/* <UserProfile
+      <UserProfile
         name={userData.username}
         tag={userData.tag}
         location={userData.location}
         image={userData.avatar}
         stats={userData.stats}
-      ></UserProfile> */}
+      ></UserProfile>
 
       <ul>
         {FriendsList.map((friend) => {
@@ -26,7 +26,7 @@ export default function App() {
         })}
       </ul>
 
-      {/* <table>
+      <table>
         <thead>
           <tr>
             <th>Type</th>
@@ -44,7 +44,7 @@ export default function App() {
             );
           })}
         </tbody>
-      </table> */}
+      </table>
     </>
   );
 }
