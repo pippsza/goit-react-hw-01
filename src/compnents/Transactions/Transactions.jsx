@@ -1,11 +1,10 @@
-// export default function Transactions({ type, amount, currency }) {
-
+import css from "./Transactions.module.css";
 export default function Transactions({ items: { type, amount, currency } }) {
   return (
     <>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <td className={css.tableRow}>{type}</td>
+      <td className={css.tableRow}>{amount}</td>
+      <td className={css.tableRow}>{currency}</td>
     </>
   );
 }

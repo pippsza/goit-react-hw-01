@@ -8,14 +8,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 ul,
 ol,
 li {
   list-style: none;
 }
-body {
+#root {
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 100px;
 }

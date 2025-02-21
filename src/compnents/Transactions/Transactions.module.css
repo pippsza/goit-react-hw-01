@@ -1,0 +1,18 @@
+.tableRow {
+  padding: 5px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(196, 196, 196);
+}
+.table {
+  width: 80%;
+  border-collapse: collapse; /* Убирает двойные границы */
+  border: 2px solid black; /* Граница таблицы */
+}
+.tableHead {
+  background-color: black;
+  color: white;
+}
+.th {
+  padding: 5px;
+}

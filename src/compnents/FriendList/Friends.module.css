@@ -1,0 +1,32 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 0 30px;
+  gap: 10%;
+}
+.friendItem {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  width: 20%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.image {
+  width: 80px;
+}
+.friendName {
+  font-size: 30px;
+}
+.isOnline {
+  color: green;
+}
+.isOffline {
+  color: red;
+}

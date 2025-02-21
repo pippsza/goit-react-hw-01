@@ -1,0 +1,46 @@
+.profileCard {
+  border: 3px solid black;
+  border-radius: 30px;
+  text-align: center;
+}
+.profileImage {
+  background-color: rgb(46, 46, 46);
+  border-radius: 50%;
+  border: 1px solid black;
+  height: 400px;
+}
+.h1 {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+.secondText {
+  color: gray;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.mainInfo {
+  padding: 20px 100px;
+  border-bottom: 2px solid black;
+}
+.profileList {
+  background-color: gray;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  align-items: center;
+}
+.profileItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.itemTitle,
+.itemValue {
+  font-size: 20px;
+  font-weight: 400;
+}

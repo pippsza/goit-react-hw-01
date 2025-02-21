@@ -1,50 +1,24 @@
 import userData from "../UserData.json";
-import UserProfile from "./UserCard/UserProfile";
+import Profile from "./UserCard/UserProfile";
 import transactionsList from "../Transactions.json";
-import Transaction from "./Transactions/Transactions";
-import FriendListItem from "./FriendListItem/FriendListItem";
-import friendsList from "../FriendList.json";
+import TransactionHistory from "./Transactions/TransactionTable";
+import FriendsList from "./FriendList/FriendList";
+import friends from "../FriendListData.json";
 
 export default function App() {
   return (
     <>
-      <UserProfile
+      <Profile
         name={userData.username}
         tag={userData.tag}
         location={userData.location}
         image={userData.avatar}
         stats={userData.stats}
-      ></UserProfile>
+      ></Profile>
 
-      <ul>
-        {friendsList.map((friend) => {
-          return (
-            <li key={friend.id}>
-              {<FriendListItem friend={friend}></FriendListItem>}
-            </li>
-          );
-        })}
-      </ul>
+      <FriendsList friends={friends}></FriendsList>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {transactionsList.map((item) => {
-            return (
-              <tr key={item.id}>
-                <Transaction items={item}></Transaction>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      <TransactionHistory items={transactionsList}></TransactionHistory>
     </>
   );
 }
