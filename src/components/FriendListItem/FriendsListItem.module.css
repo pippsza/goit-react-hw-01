@@ -1,0 +1,12 @@
+.image {
+  width: 80px;
+}
+.friendName {
+  font-size: 30px;
+}
+.isOnline {
+  color: green;
+}
+.isOffline {
+  color: red;
+}
